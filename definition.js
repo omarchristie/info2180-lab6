@@ -8,8 +8,8 @@ $(document).ready(function(){
 			success: function(data){
 				$('#result').html(data);
 			}
-		})
-	})
+		});
+	});
 	
 	$('#searchall').click(function(){
 		$.ajax({
@@ -24,9 +24,9 @@ $(document).ready(function(){
 					Response += '<p>'+$(this).find("meaning").text()+'</p>';
 					Response += '<p>'+"-"+$(this).find("author").text()+'</p>';
 					$("#result ol").append('<li>'+Response+'</li>');
-				})
+				});
 			}
 			
-		})
-	})
+		});
+	});
 })
