@@ -2,29 +2,46 @@
 <html>
 <head>
 	<title>Definition</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script src="definition.js"></script>
 </head>
 <body>
-	<div>
-		<h1>
-			Web Dictionary
-		</h1>
-	</div>
+<div class="container" class="html">
+  <div class="jumbotron jumbotron-billboard">
+  <div class="img"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1>Web  Dictionary</h1>
+               
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  <br>
+   <hr>
 	<div>
 		<div>
 			<p>Lookup the definition of a word (e.g. ajax, html,bar, phpjavascript or css)</p>
 		</div>
-		<div>
-			<input type="text" name="def" id="input" placeholder="Type word here"/>
-			<button type="button" id="search">Search</button>
-			<button type="button" id="searchall">Get All Definitions</button>
+	<br>
+		<div class="grid">
+   			 <form action="" method="get" class="search">
+				<input type="search" name="search" id="input" placeholder="Type word here" class="form__input" />
+				<button type="button" id="search" class="button">Search</button>
+				<button type="button" id="searchall" class="button">Get All Definitions</button>
+			</form>
 		</div>
 	</div>
+	<br>
 	<div>
 		<h2>Result</h2>
+		<hr>
 		<div id="result"></div>
 	</div>
+</div>
 
 </body>
 </html>
